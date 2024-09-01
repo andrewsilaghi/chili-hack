@@ -161,3 +161,17 @@ p {
     }
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.footer {
+  &--button{
+    font-size: 3.75em;
+    a {
+      color: $purple;
+      font-weight: 600;
+    }
+  }
+}
