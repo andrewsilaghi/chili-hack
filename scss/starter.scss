@@ -1,0 +1,163 @@
+// Override Bootstrap's Sass default variables
+// Customize global options and defaults before importing Bootstrap
+
+$enable-gradients: true;
+$enable-shadows: true;
+$body-color: #FFF;
+$body-bg: #000;
+$border-radius: .4rem;
+$red: #FF0051;
+$green: #00FFB2;
+$purple: #CF85FF;
+
+// Import Bootstrap core functions and required styles
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+
+// Import Bootstrap components as needed
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/utilities";
+
+// Custom font
+@font-face {
+  font-family: 'Atype';
+  src: url("/assets/font/AtypDisplay-Bold.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'Atype';
+  src: url("/assets/font/AtypDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Atype';
+  src: url("/assets/font/AtypRegularVariable.ttf") format("truetype");
+  font-weight: 400;
+}
+
+// Set global font family and weight
+* {
+  font-family: 'Atype';
+  font-weight: 400;
+}
+
+// Import custom styles
+@import "icon-list";
+
+// Style Bootstrap icons
+.bi {
+  fill: currentColor;
+}
+
+// Navbar styles
+.navbar {
+  padding: 120px 0;
+
+  .nav-item {
+    padding: 12px 17px;
+
+    a {
+      color: #fff;
+      font-size: 1.625rem;
+    }
+  }
+}
+
+// Table styles
+tbody {
+  tr:first-child td,
+  tr:first-child th {
+    border-top: 0;
+  }
+
+  tr td,
+  tr th {
+    vertical-align: bottom !important;
+  }
+}
+
+.table-bordered > tfoot > tr > th {
+  border-bottom: 0;
+}
+
+tr th {
+  border-right: 1px solid #fff;
+}
+
+tr {
+  height: 150px;
+}
+
+// Headings
+h1 {
+  color: $red;
+  font-size: 3.75em;
+  font-weight: 600;
+}
+
+// Paragraph styles
+p {
+  font-size: 2rem;
+  line-height: 38.4px;
+}
+
+// Navbar brand logo position
+.navbar-brand {
+  position: relative;
+
+  img:last-child {
+    position: absolute;
+    top: 90px;
+  }
+}
+
+// Custom color classes
+.disclaimer {
+  color: $green;
+}
+
+.prize--number {
+  font-size: 9.8rem;
+  font-weight: 900;
+}
+
+.close-bracket {
+  color: $red;
+  font-size: 3.75em;
+  font-weight: 600;
+  display: block;
+}
+
+.schedule--time {
+  &__purple {
+    font-weight: 600;
+    color: $purple;
+  }
+
+  &__red {
+    font-weight: 600;
+    color: $red;
+  }
+}
+
+.card-header {
+  button {
+    p {
+      color: #fff;
+    }
+  }
+}
