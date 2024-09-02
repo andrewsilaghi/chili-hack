@@ -58,6 +58,71 @@ $purple: #CF85FF;
 // Import custom styles
 @import "icon-list";
 
+
+// Media Queries
+
+@media (min-width: 768px) {
+  p {
+    font-size: 2rem;
+    line-height: 38.4px;
+  }
+
+  .prize--number {
+    font-size: 9.8rem;
+  }
+
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    img:last-child {
+      position: absolute;
+      top: 90px;
+    }
+  }
+
+  #bgvid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #bgvid {
+    display: none;
+  }
+  .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 80px;
+      height: 100%;
+
+      &:last-child {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .navbar {
+    .container {
+      padding: 0 25px;
+    }
+  }
+
+  .sign-up {
+    display: none !important;
+  }
+}
+
 // Style Bootstrap icons
 .bi {
   fill: currentColor;
@@ -79,6 +144,7 @@ $purple: #CF85FF;
 
 // Table styles
 tbody {
+
   tr:first-child td,
   tr:first-child th {
     border-top: 0;
@@ -90,7 +156,7 @@ tbody {
   }
 }
 
-.table-bordered > tfoot > tr > th {
+.table-bordered>tfoot>tr>th {
   border-bottom: 0;
 }
 
@@ -111,19 +177,38 @@ h1 {
 
 // Paragraph styles
 p {
-  font-size: 2rem;
-  line-height: 38.4px;
+  font-size: 1.5rem;
+  line-height: auto;
 }
 
 // Navbar brand logo position
-.navbar-brand {
-  position: relative;
 
-  img:last-child {
-    position: absolute;
-    top: 90px;
+.sign-up {
+  align-items: center;
+  text-align: center;
+
+  .btn {
+    z-index: 1;
   }
 }
+
+.vertical-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -100;
+}
+
+.intro {
+  position: relative;
+}
+
+
+
 
 // Custom color classes
 .disclaimer {
@@ -131,7 +216,7 @@ p {
 }
 
 .prize--number {
-  font-size: 9.8rem;
+  font-size: 4rem;
   font-weight: 900;
 }
 
@@ -167,11 +252,18 @@ html {
 }
 
 .footer {
-  &--button{
+  &--button {
     font-size: 3.75em;
+
     a {
       color: $purple;
       font-weight: 600;
     }
+  }
+}
+
+.btn {
+  p {
+    text-align: left;
   }
 }

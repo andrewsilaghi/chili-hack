@@ -9,10 +9,12 @@
 </head>
 
 <body>
-  <header class="border-bottom">
+
+  <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
+      
       <div class="container">
-        <a class="navbar-brand d-flex flex-column" href="#">
+        <a class="navbar-brand" href="#">
           <img src="/assets/img/logos/h_white_logo.png" width="120" alt="">
           <img src="/assets/img/logos/chiliz_red_white.png" width="120" alt="">
         </a>
@@ -48,52 +50,56 @@
     </nav>
   </header>
 
-  <div class="container vh-100">
-    <div class="row">
+  <div class="intro vh-100 mb-5 d-flex">
+    <video playsinline autoplay muted loop  id="bgvid">
+      <source src="assets/img/video/HumanVideo.mp4" type="video/mp4">
+    </video>
+    <div class="container d-flex">
+    <div class="row align-self-end">
       <div class="offset-md-6"></div>
       <div class="col-md-6">
         <img class="img-fluid" src="assets/img/video/TitleAnimation.gif" alt="">
       </div>
     </div>
   </div>
+  </div>
 
   <section class="container event-details pb-5" id="event-details">
     <div class="row">
-      <h1>Event {</h1>
+      <div class="col-md-12">
+        <h1>Event {</h1>
+      </div>
     </div>
-    <div class="row">
-      <p>Hello, Innovators.
-        <br><br>
-        At Chiliz, we don't just play the game - we elevate it to new heights.
-        <br><br>
-        This Hackathon is your invitation to shape the future of fan engagement and blockchain technology. As we stand
-        on the threshold of the next big leap, we need your innovation, your vision, and your passion to take us there.
-        <br><br>
-        This is more than just developing code or solving problems—it's about creating breakthroughs that connect,
-        empower, and inspire the global community of fans. We want you to push the limits, redefine what's possible, and
-        deliver solutions that will set the standard for the industry.
-        <br><br>
-        The world is watching. Show them your brilliance.
-        <br><br>
-        Best, Alex Dreyfus
-      </p>
-    </div>
+    <p>Hello, Innovators.
+      <br><br>
+      At Chiliz, we don't just play the game - we elevate it to new heights.
+      <br><br>
+      This Hackathon is your invitation to shape the future of fan engagement and blockchain technology. As we stand
+      on the threshold of the next big leap, we need your innovation, your vision, and your passion to take us there.
+      <br><br>
+      This is more than just developing code or solving problems—it's about creating breakthroughs that connect,
+      empower, and inspire the global community of fans. We want you to push the limits, redefine what's possible, and
+      deliver solutions that will set the standard for the industry.
+      <br><br>
+      The world is watching. Show them your brilliance.
+      <br><br>
+      Best, Alex Dreyfus
+    </p>
     <span class="close-bracket">}</span>
   </section>
 
   <section class="prize pb-5" id="prize">
     <div class="container">
-      <div class="row">
-        <h1 class="pb-2">Total Prize Pool {</h1>
-      </div>
+      <h1 class="pb-2">Total Prize Pool {</h1>
       <span class="prize--number pb-2">$150,000 USD</span>
       <p>Click for More Details</p>
       <span class="close-bracket">&nbsp;&nbsp;&nbsp;}</span>
       <span class="close-bracket">}</span>
-      <div class="row">
-        <div class="sign-up">
-          <button class="button">Sign Up</button>
-        </div>
+      <div class="sign-up py-5 d-flex justify-content-center">
+        <div class="vertical-line"></div>
+        <button class="btn btn-danger">
+          <p class="mb-0">Sign Up</p>
+        </button>
       </div>
     </div>
   </section>
@@ -108,6 +114,9 @@
       </div>
     </div>
     <span class="close-bracket">}</span>
+    <div class="sign-up py-5 d-flex justify-content-center">
+      <div class="vertical-line"></div>
+    </div>
   </section>
 
   <section class="container schedule pb-5" id="schedule">
@@ -292,7 +301,7 @@
         <div class="card">
           <div class="card-header" id="headingThree">
             <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+              <button class="btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                 aria-controls="collapseThree">
                 <p> > When will applications open?</p>
               </button>
@@ -305,258 +314,188 @@
               non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
               tempor, sunt aliqua
               put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
             </div>
           </div>
         </div>
 
-        <!-- FAQ Item 3 -->
+        <!-- FAQ Item 4 -->
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="headingFour">
             <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
+              <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                aria-controls="collapseFour">
                 <p> > How does the application process work?</p>
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
             <div class="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
               moon officia aute,
               non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
               tempor, sunt aliqua
               put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
             </div>
           </div>
         </div>
 
-        <!-- FAQ Item 3 -->
+        <!-- FAQ Item 5 -->
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="headingFive">
             <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
+              <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                aria-controls="collapseFive">
                 <p> > How much does it cost?</p>
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
             <div class="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
               moon officia aute,
               non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
               tempor, sunt aliqua
               put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
             </div>
           </div>
         </div>
 
-        <!-- FAQ Item 3 -->
+        <!-- FAQ Item 6 -->
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="headingSix">
             <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
+              <button class="btn collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                aria-controls="collapseSix">
                 <p> > Can we apply as a team?</p>
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
             <div class="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
               moon officia aute,
               non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
               tempor, sunt aliqua
               put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
             </div>
           </div>
         </div>
 
-        <!-- FAQ Item 3 -->
+        <!-- FAQ Item 7 -->
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="headingSeven">
             <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
-                <p> > What if i don’t have an idea?</p>
+              <button class="btn collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+                aria-controls="collapseSeven">
+                <p> > What if I don’t have an idea?</p>
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
             <div class="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
               moon officia aute,
               non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
               tempor, sunt aliqua
               put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
             </div>
           </div>
         </div>
 
-        <!-- FAQ Item 3 -->
+        <!-- FAQ Item 8 -->
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="headingEight">
             <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
+              <button class="btn collapsed" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+                aria-controls="collapseEight">
                 <p> > What should I bring?</p>
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
             <div class="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
               moon officia aute,
               non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
               tempor, sunt aliqua
               put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
             </div>
           </div>
         </div>
 
-        <!-- FAQ Item 3 -->
+        <!-- FAQ Item 9 -->
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="headingNine">
             <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
-                <p> > What should I bring?</p>
+              <button class="btn collapsed" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
+                aria-controls="collapseNine">
+                <p> > What can I not bring?</p>
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordion">
             <div class="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
               moon officia aute,
               non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
               tempor, sunt aliqua
               put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
             </div>
           </div>
         </div>
 
-        <!-- FAQ Item 3 -->
+        <!-- FAQ Item 10 -->
         <div class="card">
-          <div class="card-header" id="headingThree">
+          <div class="card-header" id="headingTen">
             <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
-                <p> > What can i not bring?</p>
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-              moon officia aute,
-              non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-              tempor, sunt aliqua
-              put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
-            </div>
-          </div>
-        </div>
-
-        <!-- FAQ Item 3 -->
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
+              <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false"
+                aria-controls="collapseTen">
                 <p> > What is the judging process?</p>
               </button>
             </h5>
           </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordion">
             <div class="card-body">
               Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
               moon officia aute,
               non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
               tempor, sunt aliqua
               put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
+              craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+              Leggings occaecat
+              craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+              labore sustainable VHS.
             </div>
           </div>
         </div>
-
-        <!-- FAQ Item 3 -->
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn  collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                aria-controls="collapseThree">
-                <p> > Am I able to attend virtually?</p>
-              </button>
-            </h5>
-          </div>
-          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-            <div class="card-body">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
-              moon officia aute,
-              non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-              tempor, sunt aliqua
-              put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
-              craft beer labore
-              wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-              craft beer
-              farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
-              sustainable VHS.
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingThree">
-            <h5 class="mb-0">
-              <button class="btn" aria-expanded="false">
-                <p>}</p>
-              </button>
-            </h5>
-          </div>
-        </div>
-
       </div>
       <span class="close-bracket">}</span>
     </div>
@@ -570,7 +509,7 @@
         </div>
       </div>
       <div class="footer--logos d-flex flex-column justify-content-center align-items-center">
-         <img class="pb-5" src="/assets/img/logos/h_white_logo.png" width="200" alt="">
+        <img class="pb-5" src="/assets/img/logos/h_white_logo.png" width="200" alt="">
         <img class="pb-5" src="/assets/img/logos/chiliz_red_white.png" width="200" alt="">
       </div>
 
