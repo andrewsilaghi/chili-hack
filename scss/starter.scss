@@ -77,10 +77,6 @@ $purple: #CF85FF;
     line-height: 38.4px;
   }
 
-  .prize--number {
-    font-size: 9.8rem;
-  }
-
   .navbar-brand {
     display: flex;
     flex-direction: row;
@@ -154,6 +150,9 @@ $purple: #CF85FF;
 
   .sign-up {
     display: none;
+  }
+  .prize--number {
+    font-size: 4rem !important;
   }
 }
 
@@ -266,7 +265,7 @@ p {
 }
 
 .prize--number {
-  font-size: 4rem;
+  font-size: 9.8rem;
   font-weight: 900;
 }
 
