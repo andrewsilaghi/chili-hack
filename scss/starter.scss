@@ -39,20 +39,26 @@ $purple: #CF85FF;
 
 @font-face {
   font-family: 'Atype';
-  src: url("/assets/font/AtypDisplay-Semibold.ttf") format("truetype");
-  font-weight: 600;
+  src: url("/assets/font/AtypDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
 }
 
 @font-face {
   font-family: 'Atype';
-  src: url("/assets/font/AtypRegularVariable.ttf") format("truetype");
+  src: url("/assets/font/AtypDisplay-Regular.ttf") format("truetype");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Atype';
+  src: url("/assets/font/AtypDisplay-Light.ttf") format("truetype");
+  font-weight: 300;
 }
 
 // Set global font family and weight
 * {
   font-family: 'Atype';
-  font-weight: 400;
+  font-weight: 300;
 }
 
 // Import custom styles
@@ -62,6 +68,10 @@ $purple: #CF85FF;
 // Media Queries
 
 @media (min-width: 768px) {
+  footer {
+    padding-top: 250px;
+  }
+
   p {
     font-size: 2rem;
     line-height: 38.4px;
@@ -73,12 +83,17 @@ $purple: #CF85FF;
 
   .navbar-brand {
     display: flex;
-    flex-direction: column;
-    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    img {
+      padding: 0 10px;
+    }
 
     img:last-child {
-      position: absolute;
-      top: 90px;
+      height: 100%;
     }
   }
 
@@ -90,12 +105,19 @@ $purple: #CF85FF;
     z-index: 0;
     display: block;
   }
+
+  tr {
+    p {
+      font-size: 2.5em;
+    }
+  }
 }
 
 @media (max-width: 767px) {
   #bgvid {
     display: none;
   }
+
   .navbar-brand {
     display: flex;
     flex-direction: row;
@@ -121,6 +143,18 @@ $purple: #CF85FF;
   .sign-up {
     display: none !important;
   }
+
+  tr {
+    height: 50px;
+
+    p {
+      font-size: 1.2em;
+    }
+  }
+
+  .sign-up {
+    display: none;
+  }
 }
 
 // Style Bootstrap icons
@@ -133,7 +167,7 @@ $purple: #CF85FF;
   padding: 120px 0;
 
   .nav-item {
-    padding: 12px 17px;
+    padding: 12px 15px;
 
     a {
       color: #fff;
@@ -162,6 +196,10 @@ tbody {
 
 tr th {
   border-right: 1px solid #fff;
+
+  p {
+    font-weight: 400;
+  }
 }
 
 tr {
@@ -172,7 +210,7 @@ tr {
 h1 {
   color: $red;
   font-size: 3.75em;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 // Paragraph styles
@@ -186,25 +224,37 @@ p {
 .sign-up {
   align-items: center;
   text-align: center;
+  position: relative;
+  height: 350px;
 
   .btn {
     z-index: 1;
+    border-radius: 24.8px;
+
+    p {
+      font-size: 3.75em;
+      padding: 33px 38px;
+
+    }
   }
 }
 
 .vertical-line {
+  border-left: 1px solid #fff;
+  height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  height: auto;
-  width: auto;
-  z-index: -100;
+  left: 50%;
 }
 
 .intro {
   position: relative;
+
+  .container {
+    background-image: url('../../assets/img/background/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 
@@ -223,18 +273,16 @@ p {
 .close-bracket {
   color: $red;
   font-size: 3.75em;
-  font-weight: 600;
+  font-weight: 500;
   display: block;
 }
 
 .schedule--time {
   &__purple {
-    font-weight: 600;
     color: $purple;
   }
 
   &__red {
-    font-weight: 600;
     color: $red;
   }
 }

@@ -4,6 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="assets/css/starter.css">
   <title>Chiliz | Hacking Paris</title>
 </head>
@@ -12,7 +17,7 @@
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
-      
+
       <div class="container">
         <a class="navbar-brand" href="#">
           <img src="/assets/img/logos/h_white_logo.png" width="120" alt="">
@@ -51,20 +56,20 @@
   </header>
 
   <div class="intro vh-100 mb-5 d-flex">
-    <video playsinline autoplay muted loop  id="bgvid">
-      <source src="assets/img/video/HumanVideo.mp4" type="video/mp4">
+    <video playsinline autoplay muted loop id="bgvid">
+      <source src="assets/img/video/human_bg.mp4" type="video/mp4">
     </video>
     <div class="container d-flex">
-    <div class="row align-self-end">
-      <div class="offset-md-6"></div>
-      <div class="col-md-6">
-        <img class="img-fluid" src="assets/img/video/TitleAnimation.gif" alt="">
+      <div class="row align-self-end">
+        <div class="offset-md-6"></div>
+        <div class="col-md-6">
+          <img class="img-fluid" src="assets/img/video/TitleAnimation.gif" alt="">
+        </div>
       </div>
     </div>
   </div>
-  </div>
 
-  <section class="container event-details pb-5" id="event-details">
+  <section class="container event-details pt-5 py-5" id="event-details">
     <div class="row">
       <div class="col-md-12">
         <h1>Event {</h1>
@@ -85,17 +90,16 @@
       <br><br>
       Best, Alex Dreyfus
     </p>
-    <span class="close-bracket">}</span>
   </section>
 
-  <section class="prize pb-5" id="prize">
+  <section class="prize pt-5 py-5" id="prize">
     <div class="container">
       <h1 class="pb-2">Total Prize Pool {</h1>
       <span class="prize--number pb-2">$150,000 USD</span>
       <p>Click for More Details</p>
       <span class="close-bracket">&nbsp;&nbsp;&nbsp;}</span>
-      <span class="close-bracket">}</span>
-      <div class="sign-up py-5 d-flex justify-content-center">
+      <span class="close-bracket pb-5">}</span>
+      <div class="sign-up my-5 py-5 d-flex justify-content-center">
         <div class="vertical-line"></div>
         <button class="btn btn-danger">
           <p class="mb-0">Sign Up</p>
@@ -104,27 +108,28 @@
     </div>
   </section>
 
-  <section class="container special-guest pb-5" id="special-guest">
+  <section class="container special-guest pt-5 py-5" id="special-guest">
     <h1>Special Guests {</h1>
-    <p>Get ready to be inspired by our exceptional lineup of special guests, including industry-leading keynote
+    <p class="pb-5">Get ready to be inspired by our exceptional lineup of special guests, including industry-leading
+      keynote
       speakers, experienced judges, and hands-on mentors.</p>
-    <div class="row">
+    <div class="row pt-5 pb-5">
       <div class="col-md-12">
         <video class="w-100" src="assets/img/video/SpecialGuest_1.mp4" autoplay loop muted></video>
       </div>
     </div>
-    <span class="close-bracket">}</span>
-    <div class="sign-up py-5 d-flex justify-content-center">
+    <span class="close-bracket pt-4 pl-4 pb-5">}</span>
+    <div class="sign-up my-5 py-5 d-flex justify-content-center">
       <div class="vertical-line"></div>
     </div>
   </section>
-
-  <section class="container schedule pb-5" id="schedule">
+  <div class="divider"></div>
+  <section class="container schedule pt-5 py-5" id="schedule">
     <h1>Schedule {</h1>
-    <p class="pb-0">Day 1 Schedule</p>
+    <p class="mb-0">Day 1 Schedule</p>
     <p class="disclaimer pb-5">// Event timeline may change closer to the event date.</p>
 
-    <table class="table">
+    <table class="table pt-5">
       <tbody>
         <tr>
           <th scope="col">&nbsp;</th>
@@ -216,9 +221,13 @@
         </tr>
       </tbody>
     </table>
+    <span class="close-bracket pt-4 pl-4 pb-5">}</span>
+    <div class="sign-up my-5 py-5 d-flex justify-content-center">
+      <div class="vertical-line"></div>
+    </div>
   </section>
 
-  <section class="sponsors" id="sponsors">
+  <section class="sponsors pt-5 py-5" id="sponsors">
     <div class="container">
       <h1>Sponsors {</h1>
       <p>Proudly sponsored by industry leaders who drive innovation and support the next wave of technological
@@ -228,10 +237,15 @@
           <img class="img-fluid" src="assets/img/logos/sponsors.gif" alt="">
         </div>
       </div>
+      <span class="close-bracket pt-4 pl-4 pb-5">}</span>
+      <div class="sign-up my-5 py-5 d-flex justify-content-center">
+        <div class="vertical-line"></div>
+      </div>
     </div>
+    
   </section>
 
-  <section class="faq pb-5" id="faq">
+  <section class="faq pt-5 py-5" id="faq">
     <div class="container">
       <h1>FAQ {</h1>
       <p class="disclaimer pb-5">// This section means frequently asked questions***</p>
@@ -501,16 +515,16 @@
     </div>
   </section>
 
-  <footer class="text-white py-4">
+  <footer class="text-white">
     <div class="container">
       <div class="row">
-        <div class="col text-center pb-5">
+        <div class="col-md-12 text-center py-5">
           <p class="footer--button"><a href="/#">BACK TO TOP</a></p>
         </div>
       </div>
       <div class="footer--logos d-flex flex-column justify-content-center align-items-center">
-        <img class="pb-5" src="/assets/img/logos/h_white_logo.png" width="200" alt="">
-        <img class="pb-5" src="/assets/img/logos/chiliz_red_white.png" width="200" alt="">
+        <img class="py-5" src="/assets/img/logos/hack_paris_white.png" width="200" alt="">
+        <img class="py-5" src="/assets/img/logos/chiliz_red_white.png" width="200" alt="">
       </div>
 
     </div>
