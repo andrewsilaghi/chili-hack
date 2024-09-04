@@ -83,7 +83,6 @@ $purple: #CF85FF;
     justify-content: center;
     align-items: center;
 
-
     img {
       padding: 0 10px;
     }
@@ -151,6 +150,7 @@ $purple: #CF85FF;
   .sign-up {
     display: none;
   }
+
   .prize--number {
     font-size: 4rem !important;
   }
@@ -163,6 +163,7 @@ $purple: #CF85FF;
 
 // Navbar styles
 .navbar {
+  background: #000;
   padding: 120px 0;
 
   .nav-item {
