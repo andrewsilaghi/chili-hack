@@ -68,6 +68,21 @@ $purple: #CF85FF;
 // Media Queries
 
 @media (min-width: 768px) {
+  #bgvid {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    object-fit: cover;
+    z-index: 0;
+    display: block;
+  }
+
+  .video-container {
+    background: url("/assets/img/background/Glitch\ Large.png");
+    background-size: cover;
+    background-position: center;
+  }
+
   footer {
     padding-top: 250px;
   }
@@ -92,25 +107,30 @@ $purple: #CF85FF;
     }
   }
 
-  #bgvid {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    z-index: 0;
-    display: block;
-  }
-
   tr {
     p {
       font-size: 2.5em;
     }
+  }
+
+  .mobile-btns {
+    display: none;
   }
 }
 
 @media (max-width: 767px) {
   #bgvid {
     display: none;
+  }
+
+  .intro {
+    height: 80vh !important;
+  }
+
+  body {
+    .navbar {
+      padding: 20px 0;
+    }
   }
 
   .navbar-brand {
@@ -163,8 +183,9 @@ $purple: #CF85FF;
 
 // Navbar styles
 .navbar {
-  background: #000;
-  padding: 120px 0;
+  background: rgba(0, 0, 0, 0.8);
+  ;
+  padding: 60px 0;
 
   .nav-item {
     padding: 12px 15px;
@@ -239,6 +260,12 @@ p {
   }
 }
 
+.btn-danger {
+  a {
+    color: #fff;
+  }
+}
+
 .vertical-line {
   border-left: 1px solid #fff;
   height: 100%;
@@ -248,17 +275,16 @@ p {
 
 .intro {
   position: relative;
-
-  .container {
-    background-image: url('../../assets/img/background/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+  background-image: url('../../assets/img/background/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 
-
+section {
+  position: relative;
+}
 
 // Custom color classes
 .disclaimer {
@@ -308,6 +334,10 @@ html {
       font-weight: 600;
     }
   }
+}
+
+.footer--logos {
+  position: relative;
 }
 
 .btn {
