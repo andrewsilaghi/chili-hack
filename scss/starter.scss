@@ -67,21 +67,8 @@ $purple: #CF85FF;
 
 // Media Queries
 
-@media (min-width: 768px) {
-  #bgvid {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    object-fit: cover;
-    z-index: 0;
-    display: block;
-  }
+@include media-breakpoint-up(lg) {
 
-  .video-container {
-    background: url("/assets/img/background/Glitch\ Large.png");
-    background-size: cover;
-    background-position: center;
-  }
 
   footer {
     padding-top: 250px;
@@ -118,11 +105,12 @@ $purple: #CF85FF;
   }
 }
 
-@media (max-width: 767px) {
-  #bgvid {
-    display: none;
-  }
 
+@media (max-width: 767px) {
+  .video-container{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+  }
   .intro {
     height: 80vh !important;
   }
@@ -183,7 +171,7 @@ $purple: #CF85FF;
 
 // Navbar styles
 .navbar {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
   ;
   padding: 60px 0;
 
@@ -344,4 +332,19 @@ html {
   p {
     text-align: left;
   }
+}
+
+#bgvid {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  object-fit: cover;
+  z-index: 0;
+  display: block;
+}
+
+.video-container {
+  background: url("/assets/img/background/Glitch\ Large.png");
+  background-size: cover;
+  background-position: center;
 }
