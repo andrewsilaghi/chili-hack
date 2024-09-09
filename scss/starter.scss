@@ -107,10 +107,11 @@ $purple: #CF85FF;
 
 
 @media (max-width: 767px) {
-  .video-container{
+  .video-container {
     background-size: contain !important;
     background-repeat: no-repeat !important;
   }
+
   .intro {
     height: 80vh !important;
   }
@@ -118,8 +119,10 @@ $purple: #CF85FF;
   body {
     .navbar {
       padding: 20px 0;
+
     }
   }
+
 
   .navbar-brand {
     display: flex;
