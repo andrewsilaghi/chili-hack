@@ -427,4 +427,13 @@ html {
 .carousel-event{
   padding-top: 10em;
 }
-
+@media (min-width: 1200px) {
+  .navbar {
+    .container, .container-sm, .container-md, .container-lg, .container-xl {
+      max-width: 1140px;
+    }
+  }
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 960px;
+  }
+}
