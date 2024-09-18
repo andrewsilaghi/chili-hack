@@ -9,6 +9,8 @@ $border-radius: .4rem;
 $red: #FF0051;
 $green: #00FFB2;
 $purple: #CF85FF;
+$arrow: #00FFB2;
+
 
 // Import Bootstrap core functions and required styles
 @import "bootstrap/scss/functions";
@@ -29,6 +31,7 @@ $purple: #CF85FF;
 @import "bootstrap/scss/close";
 @import "bootstrap/scss/modal";
 @import "bootstrap/scss/utilities";
+
 
 // Custom font
 @font-face {
@@ -330,6 +333,12 @@ html {
 
 .footer--logos {
   position: relative;
+  img {
+    max-width: 200px;
+  }
+  @media (max-width: 767px) {
+    flex-direction: column !important;
+  }
 }
 
 .btn {
@@ -348,8 +357,71 @@ html {
   filter: brightness(70%);
 }
 
-.video-container {
-  background: url("/assets/img/background/Glitch\ Large.png");
-  background-size: cover;
-  background-position: center;
+.special-guest {
+  .video-container {
+    background: url("/assets/img/background/Glitch\ Large.png");
+    background-size: cover;
+    background-position: center;
+  }
 }
+
+.recap {
+  .video-container {
+    background: url("/assets/img/background/Glitch\ Large.png");
+    background-size: 35%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+}
+
+.carousel {
+  .flickity-prev-next-button.next {
+    right: 5%;
+  }
+  .flickity-prev-next-button.previous{
+    left: 5%;
+  }
+}
+
+.carousel-cell {
+  width: 100%;
+  /* full width */
+
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+
+.carousel-cell img {
+  display: block;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+  /* half-width cells for larger devices */
+  .carousel-cell {
+    width: 50%;
+  }
+}
+
+
+.carousel-cell.neighbor {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.carousel-event{
+  padding-top: 6em;
+}
+

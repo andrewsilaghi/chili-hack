@@ -22,6 +22,47 @@ import "../../node_modules/bootstrap/js/dist/util.js";
 import "../../node_modules/bootstrap/js/dist/modal.js";
 import "../../node_modules/bootstrap/js/dist/collapse.js"
 
-
-
-// element.scrollIntoView({ behavior: "smooth", inline: "nearest" });
+var flkty = new Flickity('.carousel', {
+    cellAlign: 'center',
+    contain: true,
+    wrapAround: true,
+    lazyLoad: 1,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                prevNextButtons: false,
+                pageDots: true,
+            }
+        }
+    ],
+  });
+  
+// Function to add green tint to neighboring slides
+function updateNeighborSlides() {
+    var selectedIndex = flkty.selectedIndex;
+    var previousIndex = selectedIndex - 1;
+    var nextIndex = selectedIndex + 1;
+  
+    if (previousIndex < 0) {
+      previousIndex = flkty.cells.length - 1;
+    }
+    if (nextIndex >= flkty.cells.length) {
+      nextIndex = 0;
+    }
+  
+    // Remove the class from all cells
+    flkty.cells.forEach(function (cell) {
+      cell.element.classList.remove('neighbor');
+    });
+  
+    // Add class to the neighboring cells
+    flkty.cells[previousIndex].element.classList.add('neighbor');
+    flkty.cells[nextIndex].element.classList.add('neighbor');
+  }
+  
+  // Run the function on initialization to apply the effect on page load
+  updateNeighborSlides();
+  
+  // Update neighboring slides on each new selection
+  flkty.on('select', updateNeighborSlides);
