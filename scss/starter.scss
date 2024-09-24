@@ -74,7 +74,7 @@ $arrow: #00FFB2;
 
 
   footer {
-    padding-top: 250px;
+    padding: 250px 0;
   }
 
   p {
@@ -176,6 +176,12 @@ $arrow: #00FFB2;
       font-size: 1.2em;
     } 
     h1 {
+      font-size: 2.6em;
+    }
+
+  }
+  footer{
+    .footer--button{ 
       font-size: 2.6em;
     } 
   }
@@ -345,7 +351,7 @@ html {
 .footer--logos {
   position: relative;
   img {
-    max-width: 200px;
+    max-width: 150px;
   }
   @media (max-width: 767px) {
     flex-direction: column !important;
