@@ -161,12 +161,23 @@ $arrow: #00FFB2;
     }
   }
 
+
   .sign-up {
     display: none;
   }
 
   .prize--number {
     font-size: 4rem !important;
+  }
+  section {
+    padding-left: 7% !important;
+    padding-right: 7% !important;
+    p {
+      font-size: 1.2em;
+    } 
+    h1 {
+      font-size: 3em;
+    } 
   }
 }
 
